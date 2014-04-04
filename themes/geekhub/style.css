@@ -1,0 +1,333 @@
+/*   
+Theme Name: Geekhub Theme
+Theme URI: http://geekhub.ck.ua
+Description: This is my first WordPress theme for Geekhub.
+Author: Yana Tsylinska
+Author URI: http://none
+Version: 1
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            {
+    padding:0;
+    margin:0;
+    font: 12px Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #4B7589;
+}
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font: 15px Arial, Helvetica, sans-serif; color: #E11D5C; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrapper, #header {
+    width: 900px;
+    margin: 0 auto;
+}
+#header-wrap {
+    background: url("images/background.png") repeat-x bottom;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header {
+    overflow: hidden;
+    padding-top: 1px;
+    background: url("images/circles-background.png") no-repeat center 145px;
+}
+h1 {
+    overflow: hidden;
+    float: left;
+    height: 71px;
+    width: 167px;
+    margin-top: 17px;
+    margin-bottom: 35px;
+}
+h2 {
+    text-align: center;
+    border-top: 1px solid #246987;
+    padding-top: 70px;
+    margin-top: 35px;
+    font: 53px "Trebuchet MS", Helvetica, sans-serif;
+    color: #246987;
+}
+#header a.reg {
+    display: block;
+    height: 58px;
+    width: 307px;
+    margin: 28px auto 40px;
+    padding-top: 20px;
+    background:url("images/reg-background.png") no-repeat -16px -2px;
+    text-align: center;
+    font: 26px "Trebuchet MS", Helvetica, sans-serif;
+    color: #ffffff;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#nav {
+    float: right;
+    margin-top: 45px;
+}
+#nav a {
+    font: bold 15px PT Sans, sans-serif;
+    text-transform: uppercase;
+    color: #396375;
+}
+#nav li {
+    float: left;
+    margin-left: 28px;
+}
+#nav li.current-menu-item a, #nav li a:hover {
+    color: #E11D5C;
+}
+/*--------------------------------SOCIAL-LINKS-NAV----------------------------------*/
+.social-links-nav {
+    overflow: hidden;
+    margin-top: 44px;
+    text-align: center;
+}
+.social-links-nav li{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    margin-left: 3px;
+}
+.social-links-nav li:first-child {
+    margin-left: 0;
+}
+.social-links-nav li a{
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+}
+.social-links-nav li {
+    background:url("images/social-links.png") no-repeat;
+}
+.social-links-nav li:hover {
+    background:url("images/social-links-hover.png") no-repeat;
+}
+.vimeo {
+    background-position: -10px -10px !important;
+}
+.yt {
+    background-position: -10px -44px !important;
+}
+.tw {
+    background-position: -10px -78px !important;
+}
+.vk {
+    background-position: -10px -112px !important;
+}
+.fb {
+    background-position: -10px -146px !important;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+p.geekhub {
+    font-size: 15px;
+    width: 670px;
+    margin: 34px auto 0;
+}
+h3 {
+    margin: 20px 0 25px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #437183;
+    text-align: center;
+    font: 19px "Trebuchet MS", Helvetica, sans-serif;
+    color: #437183;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.courses li {
+    float: left;
+    width: 420px;
+    height: 195px;
+    padding-right: 27px;
+}
+.courses li img {
+    float: left;
+    padding: 15px;
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    border: 2px dashed #E92777;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+}
+h4 {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.courses h4 a {
+    font: 28px "Trebuchet MS", Helvetica, sans-serif;
+    color: #E92777;
+}
+.courses p {
+    overflow: hidden;
+    line-height: 18px;
+}
+.courses li.last-child {
+    clear: right;
+}
+
+.team {
+    margin-top: 10px;
+    padding: 13px 35px 23px;
+    border-top: 1px solid #A7C3CF;
+    border-bottom: 1px solid #A7C3CF;
+}
+.team li {
+    height: 160px;
+    padding: 15px 0;
+}
+.team li h4 {
+    float: left;
+    width: 168px;
+    padding: 15px 20px 0 0;
+    white-space: pre-line;
+    text-align: right;
+    font: 28px/28px PT Sans, sans-serif;
+    color: #E92777;
+}
+.team li h4 span {
+    font: 12px Arial, sans-serif;
+    color: #F2753D;
+}
+.team li img {
+    float: left;
+    padding: 8px;
+    border: 2px dashed #577F90;
+    border-radius: 90px;
+}
+.team li p {
+    overflow: hidden;
+    padding: 38px 0 0 20px;
+}
+.team li.even h4 {
+    float: right;
+    text-align: left;
+    padding: 15px 0 0 20px;
+}
+.team li.even img {
+    float: right;
+}
+.team li.even p {
+    text-align: right;
+    padding: 38px 20px 0 0;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#footer {
+    clear: both;
+    padding-top: 20px;
+}
+.widgets {
+    display: inline-block;
+    padding: 0 0 60px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #437183;
+}
+.widgets>li {
+    display: inline-block;
+    height: 214px;
+    width: 276px;
+    margin: 0 10px;
+}
+.fb-like-box {
+    padding-top: 20px;
+}
+a.certificates {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.sponsors {
+    text-align: center;
+}
+.sponsors h3 {
+    font-size: 16px;
+    letter-spacing: 8px;
+}
+.sponsors li {
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 0;
+    width: 75px;
+    height: 55px;
+}
+.sponsors li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -75px;
+}
+.sponsors li:hover a {
+    text-indent: 0;
+}
+#footer .nav {
+    float: left;
+    min-height: 70px;
+}
+#footer .nav a {
+    font: bold 11px Arial, sans-serif;
+    text-transform: uppercase;
+    color: #396375;
+}
+#footer .nav li {
+    float: left;
+    margin-left: 21px;
+}
+#footer .nav li:first-child {
+    margin: 0;
+}
+#footer .nav li.current-menu-item a, #footer .nav li a:hover {
+    color: #E11D5C;
+}
+#footer span {
+    float: right;
+    font: 11px Arial, sans-serif;
+    color: #A7C3CF;
+}
